@@ -27,5 +27,6 @@ public class Main {
 
         thread1.start();
         thread2.start();
+        System.out.println("한글테스트");
     }
 }
