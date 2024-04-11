@@ -1,0 +1,14 @@
+- sleep()
+    - 현재 쓰레드를 지정된 시간 동안 멈추게 함
+    - sleep()은 쓰레드 자기 자신에 대해서만 멈추게 할 수 있음
+    - Thread.sleep(ms); ms(밀리초) 단위로 설정됨
+    - 예외 처리를 해야함
+        sleep 상태에 있는 동안 interrupt()를 만나면 다시
+        실행되기 때문에 InterruptedException이 발생할 수 있음
+    - 특정 쓰레드를 지목해서 멈추게 하는 것은 불가능
+
+- interrupt()
+    - 일시정지 상태인 쓰레드를 실행 대기 상태로 만듬
+    - Thread 클래스 내부에 interrupted 되었는지를 체크하는 boolean 변수가 존재함
+    - 쓰레드가 `start()` 된 후 동작하다 `interrupt()`를 만나 실행하면 interrupted 상태가 true가 됨
+    - `isInterrupted()` 메서드를 사용하여 상태 값을 확인할 수 있음
