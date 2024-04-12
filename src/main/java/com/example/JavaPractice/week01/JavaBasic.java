@@ -1,5 +1,7 @@
 package com.example.JavaPractice.week01;
 
+import org.springframework.http.converter.json.GsonBuilderUtils;
+
 // JDK
 // 1. compiler: .java -> .class
 // JRE 역할
@@ -17,4 +19,5 @@ public class JavaBasic {
         JavaBasic jb = new JavaBasic();
         jb.TestMethod();
     }
+
 }
