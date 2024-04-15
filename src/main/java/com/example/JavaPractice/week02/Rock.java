@@ -1,5 +1,8 @@
 package com.example.JavaPractice.week02;
 
+import javax.tools.JavaCompiler;
+import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -34,8 +37,12 @@ public class Rock {
                     System.out.println("tie");
                 }
             }
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        } catch (InputMismatchException  e) {
+            System.out.println("변수 잘못넣음");
+
+        } finally {
+            System.out.println("다시 돌려야함");
+
         }
     }
 }
