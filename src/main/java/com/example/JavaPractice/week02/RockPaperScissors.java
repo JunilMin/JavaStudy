@@ -1,15 +1,15 @@
 package com.example.JavaPractice.week02;
 
-import javax.tools.JavaCompiler;
-import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class Rock {
+public class RockPaperScissors {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("A player: ");
         String APlayer = sc.nextLine();
+        System.out.print("B player: ");
         String Bplayer = sc.nextLine();
         try {
             if (Objects.equals(APlayer, "Rock")) {
@@ -40,9 +40,10 @@ public class Rock {
         } catch (InputMismatchException  e) {
             System.out.println("변수 잘못넣음");
 
-        } finally {
-            System.out.println("다시 돌려야함");
-
         }
+//        finally {
+//            System.out.println("다시 돌려야함");
+
+//        }
     }
 }

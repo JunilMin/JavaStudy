@@ -16,6 +16,8 @@ public class ScannerExceptionTest {
             System.out.println("입력 값 잘못됐음");
         } finally {
             System.out.println("숫자만 입력해야함");
+            int a = (int) Math.pow(2,3);
+            System.out.println(a);
         }
     }
 }
