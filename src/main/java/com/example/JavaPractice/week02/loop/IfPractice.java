@@ -1,4 +1,4 @@
-package com.example.JavaPractice.week02;
+package com.example.JavaPractice.week02.loop;
 
 public class IfPractice {
     public static void main(String[] args) {

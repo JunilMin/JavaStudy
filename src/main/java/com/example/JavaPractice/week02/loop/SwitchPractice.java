@@ -1,4 +1,4 @@
-package com.example.JavaPractice.week02;
+package com.example.JavaPractice.week02.loop;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

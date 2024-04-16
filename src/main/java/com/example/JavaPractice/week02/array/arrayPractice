@@ -1,0 +1,31 @@
+** Array 배열
+- `int` 와 같은 기본형 변수는 1개의 값만 변수에 저장할 수 있다면
+`int[]` 와 같은 배열형 변수는 여러 개를 변수에 저장할 수 있음
+- 여러 개를 하나의 변수에 넣어놓고 들고 다니거나 하나씩 꺼내서
+쓸 수 있다는 점에서 분류통🗳️의 개념과 비슷함
+- 단, 하나의 배열형 변수에는 같은 타입의 변수만 담을 수 있음
+(=김치통에는 김치만!)
+
+
+- 선언 방식
+    int[] intArray;    // 정수 배열
+    long[] longArray;
+    double[] doubleArray;  // 실수 배열
+    char[] charArray;  // 문자 배열
+    String[] stringArray; // 문자열 배열
+
+- 2번째 선언방식
+    int intArray[];    // 정수 배열
+    long longArray[];
+    double doubleArray[];  // 실수 배열
+    char charArray[];  // 문자 배열
+    String stringArray[]; // 문자열 배열
+
+- 배열(Array)은 참조형 변수들처럼 new 명령을 통해서 생성하며,
+대괄호[] 안에 크기를 지정해줌
+- 초기값은 정해져 있음
+int는 0, boolean 은 false, String 은 null 값 등
+
+- 가변 배열
+    - Java 프로그래밍에서는 2차원 배열을 생성할 때 열의 길이를 생략하여,
+    행마다 다른 길이의 배열을 요소로 저장할 수 있습니다.
