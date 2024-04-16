@@ -14,5 +14,8 @@ public class ListPractice {
         System.out.println(intList.get(0)); // 인덱스로 값 불러오기
         intList.set(1, 9);
         System.out.println(intList); // 특정 인덱스 변경
+        intList.clear(); // 전체 초기화
+        System.out.println(intList);
+        System.out.println(intList.toString()); // 리스트 안의 값을 보여줌
     }
 }
