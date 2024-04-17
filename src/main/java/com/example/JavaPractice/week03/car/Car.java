@@ -1,13 +1,13 @@
 package com.example.JavaPractice.week03.car;
 
 public class Car {
-    // <필드 영역>
+    // <필드 영역> -> Heap 메모리의 객체 내부에 저장됨
     // 고유데이터
     String company; // 자동차 회사
     String model = "G80"; // 자동차 모델
     String color; // 자동차 색상
     double price; // 자동차 가격
-   // =====================================
+    // =====================================
 
     // 상태 데이터
     double speed; // 자동차 속도, km/h
@@ -17,6 +17,7 @@ public class Car {
 
     // 객체 데이터 영역
     Tire tire = new Tire();
+
     Door door = new Door();
     Handle handle = new Handle();
     // =====================================
@@ -34,7 +35,9 @@ public class Car {
     // =====================================
 
     //<메서드 영역>
+
     double gasPedal(double kmh, char type) {
+        // 지역 변수 -> 스택 메모리에 저장됨
         changeGear(type);
         speed = kmh;
         return speed;
@@ -52,19 +55,24 @@ public class Car {
         return gear;
     }
 
-    boolean onOffLights(){
+    boolean onOffLights() {
         lights = !lights;
         return lights;
     }
 
-    void horn(){
+    void horn() {
         System.out.println("빵");
     }
-    void carSpeed(double ... speeds){
-        for(double v : speeds){
+
+    Tire setTire(Tire tireCompany) {
+        tireCompany.company = "Hyundai";
+        return tireCompany;
+    }
+
+    void carSpeed(double... speeds) {
+        for (double v : speeds) {
             System.out.println("v= " + v);
         }
-
     }
     // =====================================
 

@@ -17,6 +17,8 @@ public class Main {
         System.out.println("lights2= " + lights2);
         System.out.println("gear= "+car.gear);
         car.carSpeed(50,60,70,80,90);
+//        String companyName = Car.setCompany();
+
 
 
 //        System.out.println("model = " + car.model);

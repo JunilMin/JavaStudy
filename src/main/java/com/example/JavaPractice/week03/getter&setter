@@ -1,0 +1,32 @@
+- Getter 와 Setter
+    - 객체의 무결성 즉, 변경이 없는 상태를 유지하기 위해 접근 제어자를 사용한다.
+        - 이때 외부에서 필드에 직접 접근하는 것을 막기 위해 필드에
+        private, default 등의 접근 제어자를 사용할 수 있다.
+        - 객체의 private 필드를 읽어오거나 저장할 수 있다.
+
+    - Getter
+        - 외부에서 객체의 private 한 필드를 읽을 필요가 있을 때
+        Getter 메서드를 사용한다.
+        - 메서드 이름의 규칙은 : get + 필드 이름(첫 글자 대문자)이다.
+        - 사용하는 방법은 인스턴스 메서드 호출과 동일하다.
+
+    - Setter
+        - 외부에서 객체의 private 한 필드를 저장/수정할 필요가 있을 때
+        Setter 메서드를 사용한다.
+        - 메서드 이름의 규칙은 : set + 필드 이름(첫 글자 대문자)이다.
+        - 사용하는 방법은 인스턴스 메서드 호출과 동일하다.
+
+    - 제어자의 조합
+        - 사용 가능한 제어자
+            - 클래스 : `public`, `default`, `final`, `abstract`
+            - 메서드 :`public`, `protected`, `default`, `private`, `final`, `abstract`, `static`
+            - 멤버 변수 :`public`, `protected`, `default`, `private`, `final`, `static`
+            - 지역변수 : `final`
+
+        **제어자 사용 시 주의 사항**
+          - 메서드에 `static`과 `abstract`를 함께 사용할 수 없다.
+          - 클래스에 `abstract`와 `final`을 동시에 사용할 수 없다.
+          - `abstract`메서드의 접근 제어자가 `private`일 수 없다.
+          - 메서드에 `private`와 `final`을 같이 사용할 필요는 없다.
+
+

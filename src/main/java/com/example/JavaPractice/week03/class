@@ -6,3 +6,53 @@
      2. 객체가 가지고 있어야 할 속성(필드)을 정의
      3. 객체를 생성하는 방식을 정의합니다.(생성자)
      4. 객체가 가지고 있어야 할 행위(메서드)를 정의
+
+     예제
+     public class Example{
+     // <필드 영역> -> Heap 메모리의 객체 내부에 저장됨
+     // 고유데이터
+     String example1; -> 멤버 변수: 인스턴스 변수
+     int example2; -> 멤버 변수: 인스턴스 변수
+     static example3 -> 멤버 변수: 클래스 변수
+         .
+         .
+         .
+     // 상태 데이터
+     double example4;
+     int example5;
+         .
+         .
+         .
+     // 객체 데이터 영역
+     Practice practice1 = new Practice();
+         .
+         .
+         .
+     // 생성자: 처음 객체가 생성될 때, 즉 인스턴스화 될 때,
+     // 어떤 로직을 실행하고 어떤 값이 필수로 들어가야 되는지 정의
+     // <생성자 영역>
+     public ConstructorPractice() {
+     // 로직
+     // 기본생성자
+     //        String test = "생성자 호출";
+     //        System.out.println(test); -> 생성자가 생성될 때마다 print됨
+         }
+         .
+         .
+         .
+
+    //<메서드 영역>
+    String ThisIsMethod(String variableName) {
+    // 지역 변수 -> 스택 메모리에 저장됨
+
+    }
+        .
+        .
+        .
+
+    // "..." -> spread 문법의 가변길이: 매개값을 , 로 구분하여 개수 상관없이
+    // 전달 가능함
+    // 예제
+    // void method(double ... speeds){
+    //}
+}
