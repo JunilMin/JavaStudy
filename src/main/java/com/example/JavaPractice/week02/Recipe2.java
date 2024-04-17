@@ -19,12 +19,17 @@ public class Recipe2 {
 
         System.out.println("Recipe");
         System.out.println("레시피를 입력하세요.");
-
-        for (int i = 1; i < 10; i++) {
-            set2.add(sc.nextLine());
-
+        while(true) {
+            String text = sc.nextLine();
+            if (text == "끝") {
+                break;
+            }
         }
-        Iterator iterator = set2.iterator();
-        System.out.println(iterator.hasNext());
+        Iterator iter = set2.iterator();
+        for (int i = 0; i < set2.size(); i++) {
+            int number = i + 1;
+            System.out.println(number + ". " + iter.next());
+        }
     }
 }
+
