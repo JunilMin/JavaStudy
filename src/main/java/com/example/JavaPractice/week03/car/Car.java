@@ -53,7 +53,7 @@ public class Car {
         return lights;
     }
 
-    void horn() {
+    public void horn() {
         System.out.println("빵빵");
     }
 

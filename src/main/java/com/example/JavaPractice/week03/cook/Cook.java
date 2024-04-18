@@ -43,7 +43,7 @@ public class Cook {
         arrayIngredients.add("청양 고추");
         arrayIngredients.add("파");
         arrayIngredients.add("계란");
-        for(int i = 0; i < 4; i++){
+        for (int i = 0; i < 4; i++) {
             System.out.println("준비된 재료입니다: " + arrayIngredients.get(i));
         }
         System.out.println("========================");
@@ -55,14 +55,14 @@ public class Cook {
         arrayEquipments.add("숟가락");
         arrayEquipments.add("그릇");
 
-        for(int i = 0; i < 4; i++){
+        for (int i = 0; i < 4; i++) {
             System.out.println("준비된 장비입니다: " + arrayEquipments.get(i));
         }
         System.out.println("========================");
     }
 
-    void waterTempIndicate(){
-        System.out.println("물의 온도는 섭씨 "+ this.degree + " 도 입니다.");
+    void waterTempIndicate() {
+        System.out.println("물의 온도는 섭씨 " + this.degree + " 도 입니다.");
         System.out.println("========================");
     }
 
@@ -70,27 +70,28 @@ public class Cook {
         System.out.println("물을 " + time + "분간 끓입니다.");
         System.out.println("========================");
     }
-    void putRamen(){
-        System.out.println(arrayIngredients.get(0)+"을 넣습니다.");
+
+    void putRamen() {
+        System.out.println(arrayIngredients.get(0) + "을 넣습니다.");
         System.out.println("========================");
     }
 
-    void putPepper(){
-        System.out.println(arrayIngredients.get(1)+"을 넣습니다.");
+    void putPepper() {
+        System.out.println(arrayIngredients.get(1) + "을 넣습니다.");
         System.out.println("========================");
     }
 
-    void putGreenOnion(){
-        System.out.println(arrayIngredients.get(2)+"을 넣습니다.");
+    void putGreenOnion() {
+        System.out.println(arrayIngredients.get(2) + "을 넣습니다.");
         System.out.println("========================");
     }
 
-    void putEgg(){
-        System.out.println(arrayIngredients.get(3)+"을 넣습니다.");
+    void putEgg() {
+        System.out.println(arrayIngredients.get(3) + "을 넣습니다.");
         System.out.println("========================");
     }
 
-    void eatRamen(){
+    void eatRamen() {
         System.out.println("라면이 완성되었습니다.");
         System.out.println("라면을 먹습니다.");
         System.out.println("========================");
