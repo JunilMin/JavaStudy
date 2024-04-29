@@ -1,7 +1,14 @@
 package com.example.JavaPractice.week03.car;
 
 
+import com.example.JavaPractice.week03.cook.Cook;
+
+import java.util.ArrayList;
+
+import static java.lang.Math.log;
+
 public class Main {
+
     public static void main(String[] args) {
 
 
@@ -27,6 +34,7 @@ public class Main {
         System.out.println("car4.price = " + car4.price);
         System.out.println("car4.gear = " + car4.gear + "\n");
     }
+
 }
 
 //public class Main {

@@ -1,8 +1,11 @@
 package com.example.JavaPractice.week03.car;
 //
 
-public class Car {
+import com.example.JavaPractice.week03.cook.Cook;
 
+import static java.lang.Math.log;
+
+public class Car {
     static final String COMPANY = "GENESIS"; // 자동차 회사 : GENESIS
     String model; // 자동차 모델
     String color; // 자동차 색상
@@ -30,7 +33,9 @@ public class Car {
 //        this.model = modelName;
 //        this.color = colorName;
 //        this.price = priceValue;
+
     }
+
 
     double gasPedal(double kmh, char type) {
         changeGear(type);
